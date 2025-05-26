@@ -21,3 +21,22 @@ logs/
 # Archivos de sistema operativo (Windows, macOS)
 .DS_Store
 Thumbs.db
+
+# directorios del IDE
+.idea/
+
+# directorios de compilacion
+out/
+*.iml
+*.ipr
+*.iws
+
+# logs
+*.log
+
+# macOS
+.DS_Store
+
+# Maven / Gradle (si usas alguno)
+target/
+build/
