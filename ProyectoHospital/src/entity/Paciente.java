@@ -1,9 +1,11 @@
+package entity;
+
 public class Paciente {
     private String nombrePaciente;
     private int dni;
     private int estudiosRealizadosCount;
 
-    public Paciente (String nombrePaciente, int dni) {
+    public Paciente (int dni, String nombrePaciente) {
         this.nombrePaciente= nombrePaciente;
         this.dni= dni;
         this.estudiosRealizadosCount = 0;

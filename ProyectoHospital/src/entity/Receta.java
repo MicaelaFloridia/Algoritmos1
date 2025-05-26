@@ -1,3 +1,5 @@
+package entity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,50 +23,37 @@ public class Receta {
         this.procesada = false; // Inicialmente, la receta está pendiente de procesamiento
     }
 
-    public int getNroReceta() {
-        return nroReceta;
-    }
-
-    public Profesional getProfesional() {
-        return profesional;
-    }
-
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
-    public List<Estudio> getEstudios() {
-        return estudios;
-    }
-
-    public boolean isProcesada() {
+    public boolean getEstado(){
         return procesada;
     }
 
-    public boolean procesar() {
-        if (this.procesada) {
-            System.out.println("Error: La Receta " + nroReceta +
-                    " ya ha sido procesada y no puede procesarse de nuevo.");
-            return false;
-        }
+    public int getNroReceta(){
+        return nroReceta;
+    }
 
-        this.procesada = true;
-        System.out.println("\nProcesando Receta " + nroReceta + " para paciente "
-                + paciente.getNombrePaciente() + "...");
-        for (Estudio estudio : estudios) {
-            estudio.realizarEstudio(this.profesional, this.paciente);
+    public List<Estudio> getEstudios(){
+        return estudios;
+    }
+
+    public Paciente getPaciente(){
+        return paciente;
+    }
+
+    public void procesar() {
+        procesada = true;
+        for (Estudio est : estudios){
+            est.realizarEstudio(paciente, profesional);
         }
-        return true;
     }
 
     @Override
     public String toString() {
         String resultado = ""; // Inicializamos una cadena vacía
         resultado += "Receta " + nroReceta + ":\n"; // Concatenamos
-        resultado += "  Profesional: " + profesional + "\n";
-        resultado += "  Paciente: " + paciente + "\n";
-        resultado += "  Estado: " + (procesada ? "PROCESADA" : "CARGADA") + "\n";
-        resultado += "  Estudios:\n";
+        resultado += "-  Profesional: " + profesional + "\n";
+        resultado += "-  Paciente: " + paciente + "\n";
+        resultado += "-  Estado: " + (procesada ? "PROCESADA" : "CARGADA") + "\n";
+        resultado += "-  Estudios:\n";
 
         for (Estudio estudio : estudios) {
             resultado += "    - " + estudio + "\n"; // Concatenamos dentro del bucle

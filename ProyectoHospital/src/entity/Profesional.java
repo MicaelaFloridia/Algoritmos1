@@ -1,14 +1,12 @@
+package entity;
+
 public class Profesional {
     private String nombreProfesional;
     private int matricula;
 
-    public Profesional (String nombreProfesional, int matricula) {
+    public Profesional (int matricula,String nombreProfesional) {
         this.nombreProfesional= nombreProfesional;
         this.matricula= matricula;
-    }
-
-    public void recetar(Estudio[] estudio,Paciente paciente) {
-
     }
 
     public String getNombreProfesional() {
@@ -23,7 +21,5 @@ public class Profesional {
     public String toString() {
         return nombreProfesional + " [" + matricula + "]";
     }
-
-
 
 }
