@@ -1,0 +1,23 @@
+# Archivos de IntelliJ IDEA (puede haber una carpeta .idea/ en la raíz y en cada módulo)
+.idea/
+*.iml
+
+# Directorios de compilación y salida (para proyectos Java estándar, Maven y Gradle)
+out/
+target/
+build/
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos de clases compiladas
+*.class
+
+# Archivos de empaquetado (JARs, WARs, etc.)
+*.jar
+*.war
+
+# Archivos de sistema operativo (Windows, macOS)
+.DS_Store
+Thumbs.db

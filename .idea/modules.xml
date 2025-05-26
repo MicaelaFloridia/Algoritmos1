@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Algoritmos1.iml" filepath="$PROJECT_DIR$/.idea/Algoritmos1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoAseguradora/ProyectoAseguradora.iml" filepath="$PROJECT_DIR$/ProyectoAseguradora/ProyectoAseguradora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoHospital/ProyectoHospital.iml" filepath="$PROJECT_DIR$/ProyectoHospital/ProyectoHospital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoHotel/ProyectoHotel.iml" filepath="$PROJECT_DIR$/ProyectoHotel/ProyectoHotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoONG/ProyectoONG.iml" filepath="$PROJECT_DIR$/ProyectoONG/ProyectoONG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoTorneo/ProyectoTorneo.iml" filepath="$PROJECT_DIR$/ProyectoTorneo/ProyectoTorneo.iml" />
+    </modules>
+  </component>
+</project>
