@@ -1,3 +1,8 @@
+package boundary;
+
+import controller.Aseguradora;
+import entity.*;
+
 import java.time.LocalDate;
 
 public class Main {
@@ -34,6 +39,6 @@ public class Main {
         aseguradora.mostrarPolizas();
 
         // Transferir poliza
-        aseguradora.transferirPoliza(p2, c3);
+       // aseguradora.transferirPoliza(p2, c3);
     }
 }
